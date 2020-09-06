@@ -8,10 +8,14 @@ export default function NavBar({ props }) {
   return (
     <div style={styles.container}>
       <div style={styles.logo}>
-        <FaCodepen size={30} /> <div style={styles.logoText}>Checkout</div>
+        <FaCodepen size={30} />
+        <div style={styles.logoText}>checkout</div>
+        <NavButton title="Our Solution" />
+        <NavButton title="Company" />
+        <NavButton title="Discover" />
       </div>
       <div style={styles.nav}>
-        <NavButton title="Our Solution" />
+        <NavButton title="Login" />
       </div>
     </div>
   );
@@ -20,7 +24,8 @@ export default function NavBar({ props }) {
 const styles = {
   container: {
     display: 'grid',
-    gridTemplateColumns: '1fr 2fr',
+    gridTemplateColumns: '2fr 1fr',
+    justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
     width: '100vw',
@@ -28,8 +33,8 @@ const styles = {
   },
   logo: {
     display: 'grid',
+    gridTemplateColumns: 'auto auto auto auto auto',
     justifyContent: 'center',
-    gridTemplateColumns: 'auto auto',
     alignItems: 'center',
     color: colors.medium,
   },
@@ -37,5 +42,8 @@ const styles = {
     fontSize: 28,
     fontWeight: 600,
     marginLeft: 10,
+  },
+  nav: {
+    display: 'flex',
   },
 };
