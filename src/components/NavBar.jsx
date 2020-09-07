@@ -48,6 +48,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 8,
+    cursor: 'pointer',
   },
   logoText: {
     fontSize: 28,

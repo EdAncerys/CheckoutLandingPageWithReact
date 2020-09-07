@@ -26,6 +26,7 @@ const styles = {
     gridTemplateColumns: 'auto auto',
     justifyContent: 'center',
     alignItems: 'center',
+    cursor: 'pointer',
   },
   text: {
     fontSize: 20,

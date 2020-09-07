@@ -1,12 +1,13 @@
 import React from 'react';
 
-import colors from '../config/colors';
+import colors from '../../config/colors';
+import FeaturedBannerText from './FeaturedBannerText';
 
 export default function FeaturedBanner({ props }) {
   return (
     <div style={styles.container}>
       <div style={styles.banner}>
-        Unleash innovation with connected payments
+        <FeaturedBannerText />
       </div>
       <div style={styles.logoBanner}>
         <div>logo</div>
@@ -18,7 +19,6 @@ export default function FeaturedBanner({ props }) {
 const styles = {
   container: {
     width: '100vw',
-    height: 800,
     marginTop: -200,
     backgroundImage: `linear-gradient(
         45deg, 
@@ -32,11 +32,6 @@ const styles = {
   },
   banner: {
     gridArea: 'a',
-    marginTop: 300,
-    marginLeft: '10vw',
-    width: '40vw',
-    height: 300,
-    backgroundColor: 'tomato',
   },
   logoBanner: {
     gridArea: 'c',

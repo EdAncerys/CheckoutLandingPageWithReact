@@ -1,7 +1,7 @@
 import React from 'react';
 import '../src/css/App.css';
 import NavBar from './components/NavBar';
-import FeaturedBanner from './components/FeaturedBanner';
+import FeaturedBanner from './components/FeaturedBanner/FeaturedBanner';
 
 export default function App({ props }) {
   return (
