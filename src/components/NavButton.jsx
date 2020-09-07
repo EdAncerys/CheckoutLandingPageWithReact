@@ -5,7 +5,7 @@ import colors from '../config/colors';
 
 export default function NavButton({ title }) {
   const [hover, setHover] = useState(false);
-  const btnColor = hover ? colors.medium : colors.secondary;
+  const btnColor = hover ? colors.primary : colors.white;
 
   return (
     <div
@@ -23,7 +23,6 @@ const styles = {
   container: {
     display: 'grid',
     margin: 10,
-    marginTop: 18,
     gridTemplateColumns: 'auto auto',
     justifyContent: 'center',
     alignItems: 'center',
