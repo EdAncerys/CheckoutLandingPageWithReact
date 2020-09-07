@@ -1,9 +1,10 @@
 import React from 'react';
+import LeftBanner from './LeftBanner';
 
 export default function PaymentBanner({ props }) {
   return (
     <div style={styles.container}>
-      <div></div>
+      <LeftBanner />
     </div>
   );
 }
@@ -14,5 +15,6 @@ const styles = {
     gridTemplateColumns: 'auto auto',
     justifyContent: 'center',
     alignItems: 'center',
+    padding: 100,
   },
 };
