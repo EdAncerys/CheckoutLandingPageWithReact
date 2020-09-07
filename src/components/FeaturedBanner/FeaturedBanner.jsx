@@ -2,6 +2,7 @@ import React from 'react';
 
 import colors from '../../config/colors';
 import FeaturedBannerText from './FeaturedBannerText';
+import LogoBanner from './LogoBanner';
 
 export default function FeaturedBanner({ props }) {
   return (
@@ -10,7 +11,7 @@ export default function FeaturedBanner({ props }) {
         <FeaturedBannerText />
       </div>
       <div style={styles.logoBanner}>
-        <div>logo</div>
+        <LogoBanner />
       </div>
     </div>
   );
@@ -35,9 +36,5 @@ const styles = {
   },
   logoBanner: {
     gridArea: 'c',
-    width: '90vw',
-    height: 100,
-    alignSelf: 'end',
-    backgroundColor: 'tomato',
   },
 };

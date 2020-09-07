@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCodepen } from 'react-icons/fa';
+import { AiOutlineAliwangwang } from 'react-icons/ai';
 
 import colors from '../config/colors';
 import NavButton from './NavButton';
@@ -9,7 +9,7 @@ export default function NavBar({ props }) {
     <div style={styles.container}>
       <div style={styles.navLeft}>
         <div style={styles.logo}>
-          <FaCodepen size={30} />
+          <AiOutlineAliwangwang size={30} />
           <div style={styles.logoText}>checkout</div>
         </div>
         <NavButton title="Our Solution" />
@@ -49,6 +49,7 @@ const styles = {
     alignItems: 'center',
     marginBottom: 8,
     cursor: 'pointer',
+    color: colors.primary,
   },
   logoText: {
     fontSize: 28,
