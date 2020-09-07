@@ -16,6 +16,7 @@ export default function NavBar({ props }) {
       </div>
       <div style={styles.nav}>
         <NavButton title="Login" />
+        <div style={styles.btnAccount}>Get Test Account</div>
       </div>
     </div>
   );
@@ -42,8 +43,21 @@ const styles = {
     fontSize: 28,
     fontWeight: 600,
     marginLeft: 10,
+    marginRight: 20,
   },
   nav: {
     display: 'flex',
+  },
+  btnAccount: {
+    display: 'grid',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.primary,
+    border: `1px solid ${colors.primary}`,
+    borderRadius: 10,
+    padding: 10,
+    fontWeight: 500,
+    color: colors.white,
+    cursor: 'pointer',
   },
 };
