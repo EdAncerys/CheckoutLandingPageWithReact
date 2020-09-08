@@ -45,7 +45,7 @@ const styles = {
   },
   logo: {
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr',
+    gridTemplateColumns: 'auto auto',
     justifyContent: 'center',
     alignItems: 'center',
     textAlign: 'center',
