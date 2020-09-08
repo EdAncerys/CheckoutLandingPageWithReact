@@ -21,6 +21,9 @@ export default function TechnologyBanner({ props }) {
               Streamline your payments through one unified API that evolves with
               you and responds to change as it happens.
             </div>
+            <div style={styles.boxSix}>
+              Our solution <BsArrowRightShort size={25} />
+            </div>
           </div>
           <div style={styles.boxFive}>
             <GiStickSplitting size={65} />
@@ -29,6 +32,9 @@ export default function TechnologyBanner({ props }) {
               Grow anywhere with local acquiring in major markets, 150+
               currencies and most popular payment methods.
             </div>
+            <div style={styles.boxSix}>
+              Feature parity <BsArrowRightShort size={25} />
+            </div>
           </div>
           <div style={styles.boxFive}>
             <GiStickyBoot size={65} />
@@ -36,6 +42,10 @@ export default function TechnologyBanner({ props }) {
             <div style={styles.boxFour}>
               Get a radically transparent view of your payments data and instant
               insights you can change your world with.
+            </div>
+            <div style={styles.boxSix}>
+              Reporting and data
+              <BsArrowRightShort size={25} />
             </div>
           </div>
         </div>
@@ -80,6 +90,13 @@ const styles = {
   },
   boxFive: {
     marginRight: 30,
+  },
+  boxSix: {
+    display: 'grid',
+    gridTemplateColumns: 'auto auto',
+    justifyContent: 'start',
+    alignItems: 'center',
+    cursor: 'pointer',
   },
   techSolutions: {
     display: 'grid',
