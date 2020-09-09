@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import FeaturedBanner from './components/FeaturedBanner/FeaturedBanner';
 import PaymentBanner from './components/PaymentBanner/PaymentBanner';
 import TechnologyBanner from './components/TechnologyBanner/TechnologyBanner';
+import BrandComponent from './components/BrandComponent/BrandComponent';
 
 export default function App({ props }) {
   return (
@@ -12,6 +13,7 @@ export default function App({ props }) {
       <FeaturedBanner />
       <PaymentBanner />
       <TechnologyBanner />
+      <BrandComponent />
     </div>
   );
 }
