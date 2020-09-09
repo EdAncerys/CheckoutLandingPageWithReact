@@ -1,13 +1,18 @@
 import React from 'react';
+import BrandBanner from './BrandBanner';
 
 export default function BrandComponent({ props }) {
   return (
     <div style={styles.container}>
-      <div></div>
+      <BrandBanner />
     </div>
   );
 }
 
 const styles = {
-  container: {}
+  container: {
+    display: 'grid',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 };
