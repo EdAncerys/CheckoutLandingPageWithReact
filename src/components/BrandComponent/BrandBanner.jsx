@@ -70,6 +70,7 @@ const styles = {
   wrapper: {
     display: 'grid',
     gridTemplateColumns: 'repeat(5, auto)',
+    justifyItems: 'start',
     alignItems: 'center',
     width: 800,
     marginTop: 20,
@@ -82,7 +83,8 @@ const styles = {
     alignItems: 'center',
     textAlign: 'center',
     fontSize: 20,
-    margin: 20,
+    marginRight: 20,
+    marginBottom: 20,
   },
   title: {
     fontSize: 25,
