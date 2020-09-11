@@ -1,6 +1,7 @@
 import React from 'react';
 import colors from '../../config/colors';
 import { BsArrowRightShort } from 'react-icons/bs';
+import LeftBanner from './LeftBanner';
 
 export default function CustomerStories({ props }) {
   return (
@@ -17,6 +18,7 @@ export default function CustomerStories({ props }) {
           </div>
         </div>
       </div>
+      <div><LeftBanner/></div>
     </div>
   );
 }
@@ -43,6 +45,7 @@ const styles = {
     display: 'grid',
     gridTemplateColumns: 'auto auto',
     fontSize: 18,
+    cursor: 'pointer',
     alignSelf: 'end',
     justifyItems: 'end',
   },
