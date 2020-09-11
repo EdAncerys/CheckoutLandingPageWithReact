@@ -56,5 +56,6 @@ const styles = {
     fontSize: 14,
     fontWeight: 400,
     marginTop: 20,
+    cursor: 'pointer',
   },
 };

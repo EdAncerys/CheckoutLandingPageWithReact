@@ -2,6 +2,7 @@ import React from 'react';
 import colors from '../../config/colors';
 import { BsArrowRightShort } from 'react-icons/bs';
 import LeftBanner from './LeftBanner';
+import RightBanner from './RightBanner';
 
 export default function CustomerStories({ props }) {
   return (
@@ -18,7 +19,10 @@ export default function CustomerStories({ props }) {
           </div>
         </div>
       </div>
-      <div><LeftBanner/></div>
+      <div style={styles.wrapper}>
+        <LeftBanner />
+        <RightBanner />
+      </div>
     </div>
   );
 }
@@ -48,5 +52,10 @@ const styles = {
     cursor: 'pointer',
     alignSelf: 'end',
     justifyItems: 'end',
+  },
+  wrapper: {
+    display: 'grid',
+    gridTemplateColumns: 'auto auto',
+    justifyContent: 'space-between',
   },
 };
